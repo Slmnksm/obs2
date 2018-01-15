@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="ogrenci" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>tr.kasim.system.model.Student</class>
+    <class>tr.kasim.system.model.Lecture</class>
+    <class>tr.kasim.system.model.StudentLecture</class>
+    <class>tr.kasim.system.model.Note</class>
+    <class>tr.kasim.system.gui.panel.User</class>
+    <class>tr.kasim.system.gui.panel.Teacher</class>
+    <class>tr.kasim.system.gui.panel.Admin</class>
+    <class>tr.kasim.system.gui.panel.StudentLecture</class>
+    <class>tr.kasim.system.model.Admin</class>
+    <class>tr.kasim.system.model.User</class>
+    <class>tr.kasim.system.model.Teacher</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ogrenci?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="s3lm4n51"/>
+    </properties>
+  </persistence-unit>
+</persistence>
